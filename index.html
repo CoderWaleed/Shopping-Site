@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="file.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Product Page</title>
+</head>
+<body>
+<header>
+  <img src="https://t4.ftcdn.net/jpg/04/45/37/55/360_F_445375579_YSgs0bUW4dYO6Gqns6tVp472a0zXrw9F.jpg" id="logo" alt="Logo">
+  <h6>AuraLush cats textstyle</h6>
+  <h3 id="heading">Welcome</h3>
+  <nav>
+    <div class="topnav">
+      <a class="active" href="#home">Home</a>
+      <a href="#offer">Latest Offers</a>
+      <a href="#contact" id="contact">Contact</a>
+      <a href="#about">About</a>
+    </div>
+  </nav>
+
+  
+
+<div id="cart">
+ 
+  <h5>Cart</h5>
+  <ul id="cart-items"></ul>
+ <div class="address">
+  <input type="text" placeholder="Name">
+  <input type="email" placeholder="Mail">
+  <input type="text" placeholder="City, Country">
+  <input type="text" placeholder="Address">
+  <br>
+
+  <input type="tel" name="phone" placeholder="Phone Number">
+ </br>
+
+
+  
+
+
+  <div id="total-price">Total: $0</div>
+  <p id="Dis"><b>Disclamer:</b> We only Deliver in the Middle East for now, <br>
+    You can pay through Cash and PayPal
+     </p>
+
+     <br>
+  <button id="checkoutBtn" onclick="checkout()">Checkout</button>
+ </div>
+</div>
+
+
+  <button onclick="changeLanguage('en')" class="lang">English</button>
+  <button onclick="changeLanguage('tur')" class="lang">Turkish</button>
+  <button onclick="changeLanguage('ar')" class="lang">Arabic</button>
+  
+</header>
+
+<div class="container">
+  <div class="product">
+    <img src="https://qph.cf2.quoracdn.net/main-qimg-7e33f8fadcb5b677ca8e31c9155c811e" width="350px" alt="Assaz Dox">
+    <span class="imgtxt">Assaz Dox</span>
+    <div class="price">499</div>
+    <label for="size1">Select Size:</label>
+    <select id="size1">
+      <option value="Small">Small</option>
+      <option value="Medium">Medium</option>
+      <option value="Large">Large</option>
+    </select>
+
+    <br>
+    <button onclick="addToCart('Assaz Dox', 499, 'size1')" class="cartBtn">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="https://i0.wp.com/www.shutterstock.com/blog/wp-content/uploads/sites/5/2021/03/cold-shoulder-kitty.jpg" width="350px" alt="Flox">
+    <span class="imgtxt">Flox</span>
+    <p id="avaialabity-status">Out of Stock</p>
+    <div class="price">899</div>
+    <label for="size2">Select Size:</label>
+    <select id="size2">
+      <option value="Small">Small</option>
+      <option value="Medium">Medium</option>
+      <option value="Large">Large</option>
+    </select>
+
+    <br>
+    <button onclick="addToCart('Flox', 899, 'size2')" class="cartBtn">Add to Cart</button>
+  </div>
+</div>
+
+
+
+<div class="product">
+  <img src="https://lollimeowpet.com/cdn/shop/products/hosi-9_800x.jpg?v=1571718188" width="350px" alt="Flox">
+  <span class="imgtxt">Gocax Hoodie</span>
+  <div class="price">1199</div>
+  <label for="size2">Select Size:</label>
+  <select id="size2">
+    <option value="Small">Small</option>
+    <option value="Medium">Medium</option>
+    <option value="Large">Large</option>
+  </select>
+
+  <br>
+  <button onclick="addToCart('Gocax Hoodie', 1199, 'size2')" class="cartBtn">Add to Cart</button>
+</div>
+</div>
+
+
+</div>
+<hr>
+<footer>
+
+  
+    <ul class="'footer">
+      
+      <li><a href="https://twitter.com">Twitter</a></li>
+      <li><a href="https://codepen.io/">Facebook</a></li>
+      <li><a href="mailto:jult@gmail.com">Email</a></li>
+      <li><a href="https://dribbble.com/">Dribbble</a></li>
+      <li><a href="https://github.com/waleedboss7">Google+</a></li>
+   
+    </ul> 
+  </div>
+<br/>
+
+</footer>
+
+<script src="file.js"></script>
+</body>
+</html>
